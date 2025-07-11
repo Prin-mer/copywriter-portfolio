@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white flex items-center justify-center">
+      <div className="text-center p-6 space-y-6 max-w-xl">
+        <h1 className="text-4xl font-bold">John Doe – Copywriter</h1>
+        <p className="text-lg">
+          I craft words that connect, convert, and compel. Explore my work and see how I can bring life to your brand’s message.
         </p>
+        <div className="space-x-4">
+          <a
+            href="https://github.com/Prin-mer"
+            target="_blank"
+            className="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg"
+          >
+            GitHub
+          </a>
+          <a
+            href="#"
+            className="inline-block bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg"
+          >
+            Live Demo
+          </a>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
